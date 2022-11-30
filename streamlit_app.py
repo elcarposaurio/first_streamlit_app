@@ -37,3 +37,6 @@ my_cur.execute("select * from fruit_load_list ")
 my_data_rows = my_cur.fetchone()
 streamlit.text("The fruit list contains:")
 streamlit.text(my_data_rows)
+
+add_my_fruit = streamlit.text_input('What fruit would you like to add?','Kiwi')
+streamlit.write('Thanks for adding ', add_my_fruit)
